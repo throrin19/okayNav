@@ -360,9 +360,7 @@
                 visible_nav_items = self.getVisibleItemCount(),
                 collapse_width = self.nav_visible.outerWidth(true) + self.toggle_icon_width,
                 expand_width = space_taken + self.last_visible_child_width + self.toggle_icon_width,
-                expandAll_width = space_taken - nav_full_width + self.default_width;
-
-            self.default_width = self.getChildrenWidth(self.navigation);
+                expandAll_width = space_taken - nav_full_width + self.getChildrenWidth(self.navigation);
 
             if (wrapper_width > expandAll_width) {
                 self._expandAllItems();
