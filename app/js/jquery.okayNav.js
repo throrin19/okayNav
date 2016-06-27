@@ -170,6 +170,10 @@
                     self.nav_moving = true;
                 })
                 .on('touchend.okayNav', function(e) {
+                    if (!$(e.target).hasClass('okayNav__menu-toggle')) {
+                        return;
+                    }
+                    
                     self.sTouch = {
                         x: 0,
                         y: 0
